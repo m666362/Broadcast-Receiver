@@ -2,6 +2,7 @@ package org.richit.broadcastreceiver;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,5 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void broadcastIntent(View view) {
+        Intent intent = new Intent();
+        intent.setAction("CUSTOM_INTENT");
+        sendBroadcast(intent);
     }
 }
