@@ -18,7 +18,7 @@
 
         <receiver android:name=".MyBroadcastReceiver">
             <intent-filter>
-                <action android:name="CUSTOM_INTENT">
+                <action android:name="android.intent.action.HEADSET_PLUG">
                 </action>
             </intent-filter>
 
